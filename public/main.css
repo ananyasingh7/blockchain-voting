@@ -3,7 +3,7 @@
     position: absolute;
     width: 50%;
     height: 50%;
-    top: 20%
+    top: 40%
 }
 path:hover, circle:hover {
     stroke: red !important;
@@ -28,6 +28,10 @@ path:hover, circle:hover {
     border-radius: 5px;
     padding: 5px;
     font-family: arial;
+}
+
+.registration {
+    display: none;
 }
   
   

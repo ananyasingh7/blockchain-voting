@@ -73,9 +73,21 @@
     </g>
         <path id="path67" fill="none" stroke="#A9A9A9" stroke-width="2" d="M385,593v55l36,45 M174,525h144l67,68h86l53,54v46"/>
     </svg>
-    <script src="main.js"></script>
-    <a href="">Register to vote</a>
-    <a href="">Sign in to vote</a>
+    <script src="map.js"></script>
+    <a onclick="displayRegis()">Register to vote</a>
+    <a href="/sign-in">Sign in to vote</a>
     <a href="">Query Ballots</a>
+    <script src="register.js"></script>
+    <div class= "registration" id="registration">
+        <form id="registration" action="/register">
+            <label for="FirstName">First Name:</label>
+            <input type="text" id="FirstName" name="FirstName" placeholder="First Name">
+            <br>
+            <label for="LastName">Last Name:</label>
+            <input type="text" id="LastName" name="LastName" placeholder="Last Name">
+            <br>
+            <button type="button" onclick="submitRegis()">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
