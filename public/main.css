@@ -30,8 +30,10 @@ path:hover, circle:hover {
     font-family: arial;
 }
 
-.registration {
+.vote, .registration {
     display: none;
 }
+
+
   
   

@@ -74,9 +74,11 @@
         <path id="path67" fill="none" stroke="#A9A9A9" stroke-width="2" d="M385,593v55l36,45 M174,525h144l67,68h86l53,54v46"/>
     </svg>
     <script src="map.js"></script>
-    <a onclick="displayRegis()">Register to vote</a>
-    <a href="/sign-in">Sign in to vote</a>
-    <a href="">Query Ballots</a>
+    <div>
+        <button onclick="displayRegis()">Register</button>
+        <button onclick="displayVoteSignIn()">Vote</button>
+        <button>Query</button>
+    </div>
     <script src="register.js"></script>
     <div class= "registration" id="registration">
         <form id="registration" action="/register">
@@ -87,6 +89,17 @@
             <input type="text" id="LastName" name="LastName" placeholder="Last Name">
             <br>
             <button type="button" onclick="submitRegis()">Submit</button>
+        </form>
+    </div>
+    <script src="vote.js"></script>
+    <div class= "vote" id="vote">
+        <form id="vote" action="/vote">
+            <br>
+            <label for="userIdVote">User ID:</label>
+            <input type="text" id="userIdVote" name="userIdVote" placeholder="User ID">
+            <label for="passwordVote">Password:</label>
+            <input type="password" id="passwordVote" name="passwordVote" placeholder="password">
+            <button type="button" onclick="submitVoteSignIn()">Submit</button>
         </form>
     </div>
 </body>
