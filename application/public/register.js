@@ -1,10 +1,7 @@
 function displayRegis() {
     var x = document.getElementById("registration");
-    var y = document.getElementById("vote");
-    if (x.style.display === "none") {
-        if(y.style.display === "none"){
-            x.style.display = "block";
-        }
+    if (x.style.display === "none" && check()) {
+        x.style.display = "block";
     } else {
       x.style.display = "none";
     }
@@ -13,4 +10,13 @@ function displayRegis() {
 function submitRegis(){
     console.log(document.getElementById('FirstName').value);
     console.log(document.getElementById('LastName').value);
+}
+
+function check(){
+    var y = document.getElementById("vote");
+    if(y.style.display === "none"){
+        return true;
+    }else{
+        return false;
+    }
 }
