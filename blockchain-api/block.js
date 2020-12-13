@@ -1,4 +1,5 @@
 const SHA256 = require('crypto-js/sha256');
+
 class Block{
 
     constructor(index, timestamp, previousHash, data){
@@ -34,10 +35,7 @@ class Block{
         while(this.hash.substring(0, difficulty) !==Array(difficulty + 1).join("0")){
             this.nonce++;
             this.hash = this.calculateHash();
-            console.log(this.hash);
-        }
-        console.log("--------------");
-        console.log(this.hash);        
+        }        
     }
 
 
@@ -46,6 +44,7 @@ class Block{
 
 }
 
+/*
 let data =  {'contentddd':{'path':'callie/circle','type':'filller'},'video':{'videoId':'CvIr-2lMLs‌​k-due','endSeconds':'30','startSeconds':15}};
 let block = new Block(9, '11:28:59', 'hweweferwr', data);
 let block2 = new Block(2, '45:24:21:90', 'e2defwqfwefqwfwqfqw', data);
@@ -53,5 +52,10 @@ console.log(block.calculateHash())
 console.log(block.calculateHash().substring(0,4));
 console.log(Array(5).join(0))
 console.log("--------------");
-console.log(block.proofOfWork(1));
-//module.exports = Block;
+console.log(block.proofOfWork(3));
+
+console.log(Math.floor(new Date().getTime() / 1000));
+*/
+
+
+module.exports = Block;
