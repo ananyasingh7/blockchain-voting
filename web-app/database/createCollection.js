@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const connection = require('./hiddenPasswords.js')
+const connection = require('../../hiddenPasswords.js')
 
 MongoClient.connect(connection, 
     {useUnifiedTopology: true},
