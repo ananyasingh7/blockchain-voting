@@ -81,7 +81,7 @@
     </div>
     <script src="register.js"></script>
     <div class= "registration" id="registration">
-        <form action="/register" method="POST" id="registration">
+        <form id="registration" action="/register">
             <label for="FirstName">First Name:</label>
             <input type="text" id="FirstName" name="FirstName" placeholder="First Name" required>
             <br>
@@ -99,15 +99,8 @@
                 <option value="CO">Colorado</option>
             </select>
             <br>
-            <button type="submit">Submit</button> <!--onclick="submitRegis()-->
+            <button type="button" onclick="submitRegis()">Submit</button>
         </form>
-        <!--
-            <form action="/test" method="POST">
-            <input type="text" placeholder="name" name="name">
-            <input type="text" placeholder="quote" name="quote">
-            <button type="submit">Submit</button>
-        </form>
-        -->
     </div>
     <script src="vote.js"></script>
     <div class= "vote" id="vote">
