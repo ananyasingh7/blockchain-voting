@@ -32,6 +32,7 @@ path:hover, circle:hover {
 
 .vote, .registration {
     display: none;
+    margin-top: 10px;
 }
 
 

@@ -2,3 +2,5 @@
 .env
 
 hiddenPasswords.js
+
+/node_modules
